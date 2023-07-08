@@ -1,0 +1,83 @@
+:root {
+  --dark-color: #19283f;
+  --green-color: #33d1cc;
+  --red-color: #ff3150;
+  --yellow-color: #ffc400;
+  --section-color: #eff7fa;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+.navbar{
+  background-color: var(--dark-color);
+}
+.search {
+  border-left: 1px solid var(--green-color);
+}
+.search svg{
+  color: var(--green-color);
+}
+
+.main-btn{
+  background-color:var(--red-color);
+  color: var(--yellow-color);
+  border: 0;
+}
+.main-btn:hover{
+  color: var(--yellow-color);
+  opacity: 0.5;
+}
+.landing{
+  background-color: var(--dark-color);
+  height: calc(100vh - 70px);
+}
+.main-title:after{
+  content:"" ;
+  height: 2px;
+  background-color: var(--dark-color);
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  animation-name: linee;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+
+}
+
+@keyframes linee {
+  0%{
+    width: 0;
+
+  }
+  50%{
+    width: 25%;
+
+  }
+  100%{
+    width: 0;
+
+  }
+  
+}
+.number{
+  font-size: 12rem;
+  color: var(--section-color);
+
+
+
+}
+.icon{
+  color: var(--green-color);
+  
+}
+.icon, .number{
+  left: 50%;
+  transform: translateX(-50%);
+}
+.icon-holder{
+  height: 200px;
+  
+}
